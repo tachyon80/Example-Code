@@ -1,0 +1,159 @@
+/* CSS for Nowzaradan Bible Study site */
+/* reset styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+:focus {
+	outline: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset styles */
+body {
+	font:normal 100% Verdana, Geneva, sans-serif;
+	background-color:#ffefd5;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+#page {
+	margin:0 auto;
+	width:90%;
+	overflow:hidden;
+}
+#topBar {
+	height:15px;
+	background-color:#6a8196;
+	background: -moz-linear-gradient(top,  #6a8196 0%, #52718c 50%, #3c5f7a 51%, #638aa5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6a8196), color-stop(50%,#52718c), color-stop(51%,#3c5f7a), color-stop(100%,#638aa5));
+	background: -webkit-linear-gradient(top,  #6a8196 0%,#52718c 50%,#3c5f7a 51%,#638aa5 100%);
+	background: -o-linear-gradient(top,  #6a8196 0%,#52718c 50%,#3c5f7a 51%,#638aa5 100%);
+	background: -ms-linear-gradient(top,  #6a8196 0%,#52718c 50%,#3c5f7a 51%,#638aa5 100%);
+	background: linear-gradient(top,  #6a8196 0%,#52718c 50%,#3c5f7a 51%,#638aa5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a8196', endColorstr='#638aa5',GradientType=0 );
+}
+#loginSpace {
+	padding:.5em;
+	background-color:#ddd;
+	font-size:.8em;
+	text-align:right;
+}
+#nextStudyNotice {
+	text-align:center;
+	font-size:1.2em;
+	padding:.2em;
+}
+#mainTitle,
+#menuContainer,
+#quoteContainer {
+	float:left;
+	width:32.5%;
+	padding:3em 0;
+	margin:0 0 5em 0;
+}
+#menuContainer,
+#quoteContainer {
+	margin:0 0 5em 1.25%;
+}
+#mainTitle p,
+#mainTitle h1,
+#mainTitle h3,
+#menuContainer ul,
+#quoteContainer p {
+	padding:0 20px;
+}
+#mainTitle {
+	color:#dc143c;
+}
+#mainTitle h1 {
+	text-align:center;
+	font-size:1.8em;
+	padding-bottom:1em;
+}
+#mainTitle p {
+	font-style:italic;
+	font-size:.6em;
+	padding-top:1em;
+}
+#menuContainer ul li {
+	padding:0 0 1em 0;
+}
+#quoteContainer {
+	color:#dc143c;
+}
+#quoteContainer span {
+	font-size:2em;
+	font-family:"Times New Roman", Times, serif;
+}
+#footer {
+	text-align:center;
+	color:#fff;
+	background-color:#000;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	height:3.5em;
+	padding:1.5em 0 0 0;
+}
+/* forms */
+form {
+    padding-top: 1em;
+}
+#emailForm fieldset {
+	margin:0 0 10px 10px;
+}
+#emailForm label {
+	display:block;
+	font-weight:bold;
+	text-shadow: 0 1px 1px #fff;
+}
+form span.error {
+    color: #f00;
+    font-weight: bold;
+    padding: 0 0 0 .5em;
+    display: none;
+}
+/* iPhone layout */
+@media screen and (max-width: 520px) {
+	#quoteContainer {
+		display:none;
+	}
+	#mainTitle,
+	#menuContainer,
+	#quoteContainer {
+		float:none;
+		width:auto;
+		padding:1em 0;
+		margin:0;
+	}
+	#footer {
+		position:static;
+	}
+	body {
+		font-size:.6em;
+	}
+}
